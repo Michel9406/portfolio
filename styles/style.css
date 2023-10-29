@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2? family= Krona+One & family= Montserrat:wght@400;600 & display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 103vh;
+    box-sizing: border-box;
+    background: linear-gradient(black, black, #22D4FD);
+    color: white;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 10%;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 80px;
+
+
+}
+
+.cabecalho-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 50%;
+    color: aqua;
+    text-decoration: none;
+
+}
+
+.cabecalho-link:hover {
+    scale: 1.1;
+    transition: .5s;
+}
+
+.titulo-destaque {
+    color: aqua;
+}
+
+.apresentacao {
+    margin: 8% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apresentacao-titulo {
+    font-size: 1.9rem;
+    font-family: 'Krona One', sans-serif;
+
+}
+
+.apresentacao-texto {
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+
+}
+
+.subtitulo-botoes {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400px;
+    font-size: 1.5rem;
+
+}
+
+.botoes-linkis {
+    border: 2px double #22D4FD;
+    width: 50%;
+    text-align: center;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.6rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+.botoes-linkis:hover {
+    background-color: aqua;
+
+}
+
+.img-principal {
+    width: 35%;
+    border-radius: 110px 110px 110px 110px;
+    border: 3px inset aqua;
+    position: relative;
+
+}
+
+.img-principal:hover {
+    scale: 1.1;
+    transition: .5s;
+
+}
+
+@media (max-width:620px) {
+
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho-menu {
+        justify-content: center;
+        gap: 9%;
+    }
+
+    .cabecalho-link {
+        font-size: 22px;
+
+
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .img-principal {
+        width: 50%;
+        position: relative;
+        gap: -25%;
+        position: sticky;
+    }
+}
